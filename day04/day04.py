@@ -29,7 +29,7 @@ def is_valid_2(passport):
     return True
 
 
-with open('day04_input.txt', 'r') as input:
+with open('input.txt', 'r') as input:
     passport = {}
     valid_1 = 0
     valid_2 = 0
