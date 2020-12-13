@@ -1,4 +1,4 @@
-with open('day02_input.txt', 'r') as input:
+with open('input.txt', 'r') as input:
     lines = [line.strip().replace(':', '').split() for line in input]
 
 first_valid_count = 0

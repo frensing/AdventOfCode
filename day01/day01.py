@@ -1,4 +1,4 @@
-with open('day01_input.txt', 'r') as input:
+with open('input.txt', 'r') as input:
     numbers = [int(line.strip()) for line in input]
 
 for i in range(0, len(numbers)):

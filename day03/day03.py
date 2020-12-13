@@ -1,4 +1,4 @@
-with open('day03_input.txt', 'r') as input:
+with open('input.txt', 'r') as input:
     lines = [line.strip() for line in input]
 
 
