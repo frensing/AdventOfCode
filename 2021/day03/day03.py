@@ -30,8 +30,13 @@ def get_rating(report, bit_func):
         keep = tmp
 
 
-oxygen_func = lambda i, keep: 1 if sum(int(report[j][i]) for j in keep) / len(keep) >= 0.5 else 0
-co2_func = lambda i, keep: abs(oxygen_func(i, keep) - 1)
+def oxygen_func(i, keep):
+    return 1 if sum(int(report[j][i]) for j in keep) / len(keep) >= 0.5 else 0
+
+
+def co2_func(i, keep):
+    return abs(oxygen_func(i, keep) - 1)
+
 
 oxygen = int(''.join(get_rating(report, oxygen_func)), 2)
 co2 = int(''.join(get_rating(report, co2_func)), 2)
