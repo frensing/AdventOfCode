@@ -17,7 +17,7 @@ def print_field():
     height = max(p[1] for p in points) + 1
     for y in range(height):
         for x in range(width):
-            print('#' if [x, y] in points else '.', end='')
+            print('█' if [x, y] in points else '.', end='')
         print()
     print()
 
